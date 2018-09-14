@@ -173,6 +173,7 @@
             this.btnPoint.TabIndex = 11;
             this.btnPoint.Text = ".";
             this.btnPoint.UseVisualStyleBackColor = true;
+            this.btnPoint.Click += new System.EventHandler(this.btnPoint_Click);
             // 
             // btnClear
             // 

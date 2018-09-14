@@ -86,5 +86,10 @@ namespace Calculator_V1
             txtDisplay.Text = total1.ToString();
             total1 = 0; 
         }
+
+        private void btnPoint_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text = txtDisplay.Text + btnPoint.Text; 
+        }
     }
 }
