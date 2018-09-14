@@ -44,6 +44,7 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.btnEquals = new System.Windows.Forms.Button();
             this.btnPlus = new System.Windows.Forms.Button();
+            this.btnMinus = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtDisplay
@@ -189,7 +190,7 @@
             // btnEquals
             // 
             this.btnEquals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEquals.Location = new System.Drawing.Point(314, 174);
+            this.btnEquals.Location = new System.Drawing.Point(294, 174);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(64, 48);
             this.btnEquals.TabIndex = 13;
@@ -200,7 +201,7 @@
             // btnPlus
             // 
             this.btnPlus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPlus.Location = new System.Drawing.Point(314, 102);
+            this.btnPlus.Location = new System.Drawing.Point(294, 102);
             this.btnPlus.Name = "btnPlus";
             this.btnPlus.Size = new System.Drawing.Size(64, 48);
             this.btnPlus.TabIndex = 14;
@@ -208,12 +209,23 @@
             this.btnPlus.UseVisualStyleBackColor = true;
             this.btnPlus.Click += new System.EventHandler(this.btnPlus_Click);
             // 
+            // btnMinus
+            // 
+            this.btnMinus.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMinus.Location = new System.Drawing.Point(385, 102);
+            this.btnMinus.Name = "btnMinus";
+            this.btnMinus.Size = new System.Drawing.Size(68, 48);
+            this.btnMinus.TabIndex = 15;
+            this.btnMinus.Text = "-";
+            this.btnMinus.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(423, 381);
+            this.ClientSize = new System.Drawing.Size(509, 381);
+            this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.btnClear);
@@ -254,6 +266,7 @@
         private System.Windows.Forms.Button btnClear;
         private System.Windows.Forms.Button btnEquals;
         private System.Windows.Forms.Button btnPlus;
+        private System.Windows.Forms.Button btnMinus;
     }
 }
 

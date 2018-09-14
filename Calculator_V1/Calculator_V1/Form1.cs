@@ -12,7 +12,12 @@ namespace Calculator_V1
 {
     public partial class Form1 : Form
     {
-        double total1 = 0; 
+        double total1 = 0;
+        bool plusButtonClicked = false; 
+        bool minusButtonClicked = false; 
+
+
+
         public Form1()
         {
             InitializeComponent();
