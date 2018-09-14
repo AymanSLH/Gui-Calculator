@@ -93,9 +93,17 @@ namespace Calculator_V1
             {
                 total1 = total1 + double.Parse(txtDisplay.Text);
             }
-            else
+            else if(minusButtonClicked)
             {
                 total1 = total1 - double.Parse(txtDisplay.Text);
+            }
+            else if (divdButtonClicked)
+            {
+                total1 = total1 / double.Parse(txtDisplay.Text);
+            }
+            else if (multiButtonClicked)
+            {
+                total1 = total1 * double.Parse(txtDisplay.Text);
             }
             txtDisplay.Text = total1.ToString();
             total1 = 0; 
