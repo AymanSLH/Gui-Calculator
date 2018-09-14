@@ -81,7 +81,9 @@ namespace Calculator_V1
             total1 = total1 + double.Parse(txtDisplay.Text);
             txtDisplay.Clear();
             plusButtonClicked = true;
-            minusButtonClicked = false; 
+            minusButtonClicked = false;
+            multiButtonClicked = false;
+            divdButtonClicked = false; 
 
         }
 
@@ -104,7 +106,19 @@ namespace Calculator_V1
             total1 = total1 + double.Parse(txtDisplay.Text);
             txtDisplay.Clear();
             plusButtonClicked = false;
-            minusButtonClicked = true; 
+            minusButtonClicked = true;
+            divdButtonClicked = false;
+            multiButtonClicked = false;
+        }
+
+        private void btnMult_Click(object sender, EventArgs e)
+        {
+            total1 = total1 + double.Parse(txtDisplay.Text);
+            txtDisplay.Clear();
+            bool plusButtonClicked = false;
+            bool minusButtonClicked = false;
+            bool multiButtonClicked = true;
+            bool divdButtonClicked = false;
         }
     }
 }
