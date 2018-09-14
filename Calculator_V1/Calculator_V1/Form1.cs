@@ -82,7 +82,10 @@ namespace Calculator_V1
         private void btnPlus_Click(object sender, EventArgs e)
         {
             total1 = total1 + double.Parse(txtDisplay.Text);
-            txtDisplay.Clear(); 
+            txtDisplay.Clear();
+            plusButtonClicked = true;
+            minusButtonClicked = false; 
+
         }
 
         private void btnEquals_Click(object sender, EventArgs e)
