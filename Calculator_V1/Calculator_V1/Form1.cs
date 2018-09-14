@@ -90,7 +90,14 @@ namespace Calculator_V1
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-            total1 = total1 + double.Parse(txtDisplay.Text);
+            if (plusButtonClicked)
+            {
+                total1 = total1 + double.Parse(txtDisplay.Text);
+            }
+            else
+            {
+                total1 = total1 - double.Parse(txtDisplay.Text);
+            }
             txtDisplay.Text = total1.ToString();
             total1 = 0; 
         }
