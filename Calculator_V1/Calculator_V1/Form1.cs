@@ -84,6 +84,7 @@ namespace Calculator_V1
         {
             total1 = total1 + double.Parse(txtDisplay.Text);
             txtDisplay.Text = total1.ToString();
+            total1 = 0; 
         }
     }
 }

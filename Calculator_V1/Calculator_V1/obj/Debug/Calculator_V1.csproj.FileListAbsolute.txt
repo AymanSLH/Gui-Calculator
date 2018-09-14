@@ -8,3 +8,13 @@ C:\Users\Ayman\source\repos\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.
 C:\Users\Ayman\source\repos\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.csproj.CoreCompileInputs.cache
 C:\Users\Ayman\source\repos\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.exe
 C:\Users\Ayman\source\repos\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.pdb
+C:\Users\Ayman\Desktop\Gui-Calculator\Calculator_V1\Calculator_V1\bin\Debug\Calculator_V1.exe.config
+C:\Users\Ayman\Desktop\Gui-Calculator\Calculator_V1\Calculator_V1\bin\Debug\Calculator_V1.exe
+C:\Users\Ayman\Desktop\Gui-Calculator\Calculator_V1\Calculator_V1\bin\Debug\Calculator_V1.pdb
+C:\Users\Ayman\Desktop\Gui-Calculator\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.csprojAssemblyReference.cache
+C:\Users\Ayman\Desktop\Gui-Calculator\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.Form1.resources
+C:\Users\Ayman\Desktop\Gui-Calculator\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.Properties.Resources.resources
+C:\Users\Ayman\Desktop\Gui-Calculator\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.csproj.GenerateResource.cache
+C:\Users\Ayman\Desktop\Gui-Calculator\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.csproj.CoreCompileInputs.cache
+C:\Users\Ayman\Desktop\Gui-Calculator\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.exe
+C:\Users\Ayman\Desktop\Gui-Calculator\Calculator_V1\Calculator_V1\obj\Debug\Calculator_V1.pdb
