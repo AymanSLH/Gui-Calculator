@@ -96,5 +96,13 @@ namespace Calculator_V1
         {
             txtDisplay.Text = txtDisplay.Text + btnPoint.Text; 
         }
+
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            total1 = total1 + double.Parse(txtDisplay.Text);
+            txtDisplay.Clear();
+            plusButtonClicked = false;
+            minusButtonClicked = true; 
+        }
     }
 }

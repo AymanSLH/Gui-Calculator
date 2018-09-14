@@ -218,6 +218,7 @@
             this.btnMinus.TabIndex = 15;
             this.btnMinus.Text = "-";
             this.btnMinus.UseVisualStyleBackColor = true;
+            this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
             // 
             // Form1
             // 
