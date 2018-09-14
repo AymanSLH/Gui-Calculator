@@ -78,6 +78,7 @@ namespace Calculator_V1
 
         private void btnPlus_Click(object sender, EventArgs e)
         {
+            Holder.Text = txtDisplay.Text + "+";
             total1 = total1 + double.Parse(txtDisplay.Text);
             txtDisplay.Clear();
             plusButtonClicked = true;
@@ -87,13 +88,46 @@ namespace Calculator_V1
 
         }
 
+        private void btnMinus_Click(object sender, EventArgs e)
+        {
+            Holder.Text = txtDisplay.Text + "-";
+            total1 = total1 + double.Parse(txtDisplay.Text);
+            txtDisplay.Clear();
+            plusButtonClicked = false;
+            minusButtonClicked = true;
+            divdButtonClicked = false;
+            multiButtonClicked = false;
+        }
+
+        private void btnMult_Click(object sender, EventArgs e)
+        {
+            Holder.Text = txtDisplay.Text + "×";
+            total1 = total1 + double.Parse(txtDisplay.Text);
+            txtDisplay.Clear();
+            bool plusButtonClicked = false;
+            bool minusButtonClicked = false;
+            bool multiButtonClicked = true;
+            bool divdButtonClicked = false;
+        }
+
+        private void btnDiv_Click(object sender, EventArgs e)
+        {
+            Holder.Text = txtDisplay.Text + "÷";
+            total1 = total1 + double.Parse(txtDisplay.Text);
+            txtDisplay.Clear();
+            bool plusButtonClicked = false;
+            bool minusButtonClicked = false;
+            bool multiButtonClicked = false;
+            bool divdButtonClicked = true;
+        }
+
         private void btnEquals_Click(object sender, EventArgs e)
         {
             if (plusButtonClicked)
             {
                 total1 = total1 + double.Parse(txtDisplay.Text);
             }
-            else if(minusButtonClicked)
+            else if (minusButtonClicked)
             {
                 total1 = total1 - double.Parse(txtDisplay.Text);
             }
@@ -106,37 +140,7 @@ namespace Calculator_V1
                 total1 = total1 * double.Parse(txtDisplay.Text);
             }
             txtDisplay.Text = total1.ToString();
-            total1 = 0; 
-        }
-
-        private void btnMinus_Click(object sender, EventArgs e)
-        {
-            total1 = total1 + double.Parse(txtDisplay.Text);
-            txtDisplay.Clear();
-            plusButtonClicked = false;
-            minusButtonClicked = true;
-            divdButtonClicked = false;
-            multiButtonClicked = false;
-        }
-
-        private void btnMult_Click(object sender, EventArgs e)
-        {
-            total1 = total1 + double.Parse(txtDisplay.Text);
-            txtDisplay.Clear();
-            bool plusButtonClicked = false;
-            bool minusButtonClicked = false;
-            bool multiButtonClicked = true;
-            bool divdButtonClicked = false;
-        }
-
-        private void btnDiv_Click(object sender, EventArgs e)
-        {
-            total1 = total1 + double.Parse(txtDisplay.Text);
-            txtDisplay.Clear();
-            bool plusButtonClicked = false;
-            bool minusButtonClicked = false;
-            bool multiButtonClicked = false;
-            bool divdButtonClicked = true;
+            total1 = 0;
         }
     }
 }

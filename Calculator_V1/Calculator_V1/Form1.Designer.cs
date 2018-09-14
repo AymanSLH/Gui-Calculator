@@ -47,6 +47,7 @@
             this.btnMinus = new System.Windows.Forms.Button();
             this.btnMult = new System.Windows.Forms.Button();
             this.btnDiv = new System.Windows.Forms.Button();
+            this.Holder = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtDisplay
@@ -244,12 +245,22 @@
             this.btnDiv.UseVisualStyleBackColor = true;
             this.btnDiv.Click += new System.EventHandler(this.btnDiv_Click);
             // 
+            // Holder
+            // 
+            this.Holder.AutoSize = true;
+            this.Holder.Location = new System.Drawing.Point(174, 57);
+            this.Holder.Name = "Holder";
+            this.Holder.Size = new System.Drawing.Size(10, 13);
+            this.Holder.TabIndex = 18;
+            this.Holder.Text = ".";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(509, 381);
+            this.Controls.Add(this.Holder);
             this.Controls.Add(this.btnDiv);
             this.Controls.Add(this.btnMult);
             this.Controls.Add(this.btnMinus);
@@ -296,6 +307,7 @@
         private System.Windows.Forms.Button btnMinus;
         private System.Windows.Forms.Button btnMult;
         private System.Windows.Forms.Button btnDiv;
+        private System.Windows.Forms.Label Holder;
     }
 }
 
