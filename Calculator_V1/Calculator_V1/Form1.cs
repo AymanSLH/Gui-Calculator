@@ -14,7 +14,11 @@ namespace Calculator_V1
     {
         double total1 = 0;
         bool plusButtonClicked = false; 
-        bool minusButtonClicked = false; 
+        bool minusButtonClicked = false;
+        bool multiButtonClicked = false; 
+        bool divdButtonClicked = false; 
+
+        
 
 
 
@@ -22,61 +26,54 @@ namespace Calculator_V1
         {
             InitializeComponent();
         }
-
         private void btnOne_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text + btnOne.Text; 
 
         }
-
         private void btnTwo_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text + btnTwo.Text;
         }
-
         private void btnThree_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text + btnThree.Text;
         }
-
         private void btnFour_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text + btnFour.Text;
         }
-
         private void btnFive_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text + btnFive.Text;
         }
-
         private void btnSix_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text + btnSix.Text;
         }
-
         private void btnSeven_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text + btnSeven.Text;
         }
-
         private void btnEight_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text + btnEight.Text;
         }
-
         private void btnNine_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text + btnNine.Text;
         }
-
         private void btnZero_Click(object sender, EventArgs e)
         {
             txtDisplay.Text = txtDisplay.Text + btnZero.Text;
         }
-
         private void btnClear_Click(object sender, EventArgs e)
         {
             txtDisplay.Clear(); 
+        }
+        private void btnPoint_Click(object sender, EventArgs e)
+        {
+            txtDisplay.Text = txtDisplay.Text + btnPoint.Text;
         }
 
         private void btnPlus_Click(object sender, EventArgs e)
@@ -100,11 +97,6 @@ namespace Calculator_V1
             }
             txtDisplay.Text = total1.ToString();
             total1 = 0; 
-        }
-
-        private void btnPoint_Click(object sender, EventArgs e)
-        {
-            txtDisplay.Text = txtDisplay.Text + btnPoint.Text; 
         }
 
         private void btnMinus_Click(object sender, EventArgs e)

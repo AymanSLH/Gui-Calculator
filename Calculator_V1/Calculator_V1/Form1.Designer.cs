@@ -45,6 +45,8 @@
             this.btnEquals = new System.Windows.Forms.Button();
             this.btnPlus = new System.Windows.Forms.Button();
             this.btnMinus = new System.Windows.Forms.Button();
+            this.btnMult = new System.Windows.Forms.Button();
+            this.btnDiv = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtDisplay
@@ -190,7 +192,7 @@
             // btnEquals
             // 
             this.btnEquals.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEquals.Location = new System.Drawing.Point(294, 174);
+            this.btnEquals.Location = new System.Drawing.Point(294, 237);
             this.btnEquals.Name = "btnEquals";
             this.btnEquals.Size = new System.Drawing.Size(64, 48);
             this.btnEquals.TabIndex = 13;
@@ -220,12 +222,34 @@
             this.btnMinus.UseVisualStyleBackColor = true;
             this.btnMinus.Click += new System.EventHandler(this.btnMinus_Click);
             // 
+            // btnMult
+            // 
+            this.btnMult.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMult.Location = new System.Drawing.Point(294, 174);
+            this.btnMult.Name = "btnMult";
+            this.btnMult.Size = new System.Drawing.Size(64, 48);
+            this.btnMult.TabIndex = 16;
+            this.btnMult.Text = "×";
+            this.btnMult.UseVisualStyleBackColor = true;
+            // 
+            // btnDiv
+            // 
+            this.btnDiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiv.Location = new System.Drawing.Point(385, 174);
+            this.btnDiv.Name = "btnDiv";
+            this.btnDiv.Size = new System.Drawing.Size(64, 48);
+            this.btnDiv.TabIndex = 17;
+            this.btnDiv.Text = "÷";
+            this.btnDiv.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(509, 381);
+            this.Controls.Add(this.btnDiv);
+            this.Controls.Add(this.btnMult);
             this.Controls.Add(this.btnMinus);
             this.Controls.Add(this.btnPlus);
             this.Controls.Add(this.btnEquals);
@@ -268,6 +292,8 @@
         private System.Windows.Forms.Button btnEquals;
         private System.Windows.Forms.Button btnPlus;
         private System.Windows.Forms.Button btnMinus;
+        private System.Windows.Forms.Button btnMult;
+        private System.Windows.Forms.Button btnDiv;
     }
 }
 
