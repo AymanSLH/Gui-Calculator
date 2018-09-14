@@ -242,6 +242,7 @@
             this.btnDiv.TabIndex = 17;
             this.btnDiv.Text = "÷";
             this.btnDiv.UseVisualStyleBackColor = true;
+            this.btnDiv.Click += new System.EventHandler(this.btnDiv_Click);
             // 
             // Form1
             // 

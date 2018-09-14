@@ -120,5 +120,15 @@ namespace Calculator_V1
             bool multiButtonClicked = true;
             bool divdButtonClicked = false;
         }
+
+        private void btnDiv_Click(object sender, EventArgs e)
+        {
+            total1 = total1 + double.Parse(txtDisplay.Text);
+            txtDisplay.Clear();
+            bool plusButtonClicked = false;
+            bool minusButtonClicked = false;
+            bool multiButtonClicked = false;
+            bool divdButtonClicked = true;
+        }
     }
 }
