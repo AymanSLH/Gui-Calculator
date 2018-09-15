@@ -18,10 +18,6 @@ namespace Calculator_V1
         bool multiButtonClicked = false; 
         bool divdButtonClicked = false; 
 
-        
-
-
-
         public Form1()
         {
             InitializeComponent();
@@ -104,10 +100,10 @@ namespace Calculator_V1
             Holder.Text = txtDisplay.Text + "×";
             total1 = total1 + double.Parse(txtDisplay.Text);
             txtDisplay.Clear();
-            bool plusButtonClicked = false;
-            bool minusButtonClicked = false;
-            bool multiButtonClicked = true;
-            bool divdButtonClicked = false;
+            plusButtonClicked = false;
+            minusButtonClicked = false;
+            multiButtonClicked = true;
+            divdButtonClicked = false;
         }
 
         private void btnDiv_Click(object sender, EventArgs e)
@@ -115,10 +111,10 @@ namespace Calculator_V1
             Holder.Text = txtDisplay.Text + "÷";
             total1 = total1 + double.Parse(txtDisplay.Text);
             txtDisplay.Clear();
-            bool plusButtonClicked = false;
-            bool minusButtonClicked = false;
-            bool multiButtonClicked = false;
-            bool divdButtonClicked = true;
+            plusButtonClicked = false;
+            minusButtonClicked = false;
+            multiButtonClicked = false;
+            divdButtonClicked = true;
         }
 
         private void btnEquals_Click(object sender, EventArgs e)
